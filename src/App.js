@@ -1,4 +1,5 @@
-import Depenses from "./components/Depenses";
+import ReactDOM from 'react-dom/client';
+import Depenses from "./components/Depenses/Depenses";
 
 function App() {
   const depenses = [

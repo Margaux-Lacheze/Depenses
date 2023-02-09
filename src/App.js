@@ -1,7 +1,9 @@
-import ReactDOM from 'react-dom/client';
-import Depenses from "./components/Depenses/Depenses";
+import React from 'react';
 
-function App() {
+import Depenses from "./components/Depenses/Depenses";
+import NouvelleDepense from './components/NouvelleDepense/NouvelleDepense';
+
+const App = () => {
   const depenses = [
     {
       id: 'e1',
@@ -27,10 +29,15 @@ function App() {
       montant: 200.46, 
       date: new Date(2020, 6, 16)
     },
-  ]
+  ];
+
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense);
+  };
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NouvelleDepense onAddExpense={addExpenseHandler}/>
       <Depenses items={depenses}/>
     </div>
   );

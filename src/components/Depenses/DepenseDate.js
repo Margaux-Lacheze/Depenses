@@ -1,7 +1,7 @@
-import ReactDOM from 'react-dom/client';
+import React from 'react';
 import "./DepenseDate.css";
 
-function DepenseDate(props) {
+const DepenseDate = (props) => {
   const annee = props.date.getFullYear();
   const mois = props.date.toLocaleString("fr-FR", { month: "long" });
   const jour = props.date.toLocaleString("fr-FR", { day: "2-digit" });

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Depenses from "./components/Depenses/Depenses";
 import NouvelleDepense from './components/NouvelleDepense/NouvelleDepense';
@@ -21,9 +21,9 @@ const App = () => {
       id: 'e3',
       titre: 'Chauffage', 
       montant: 87.9, 
-      date: new Date(2020, 11, 5)
+      date: new Date(2020, 11, 5) 
     },
-    {
+    { 
       id: 'e4',
       titre: 'Nourriture', 
       montant: 200.46, 

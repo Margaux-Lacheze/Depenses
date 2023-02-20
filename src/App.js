@@ -35,7 +35,7 @@ const App = () => {
   const [depenses, setDepenses] = useState(DUMMY_EXPENSES);
 
   const addExpenseHandler = depense => {
-    //maj state quand basé sur ancienne version d'un state
+    //maj state quand basé sur ancienne version d'un même state
     setDepenses(prevDepenses => {
       return [depense, ...prevDepenses]
     }

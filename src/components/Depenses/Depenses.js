@@ -8,8 +8,13 @@ const Depenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2024");
 
   const filterChangeHandler = (selectedYear) => {
-    setFilteredYear = selectedYear;
+    setFilteredYear(selectedYear);
   };
+
+  const depensesFiltrees = props.items.filter(depense => {
+    return depense.date.getFullYear().toString() === filteredYear;
+  });
+
   return (
     <div>
       <Card className="expenses">
@@ -17,7 +22,7 @@ const Depenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {props.items.map((depense) => (
+        {depensesFiltrees.map((depense) => (
           <DepenseItem
             // key est un mot clé permettant à React d'identifier chaque élément grâce à l'id qu'on lui a donné
             key ={depense.id}

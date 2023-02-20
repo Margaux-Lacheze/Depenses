@@ -8,25 +8,25 @@ const DUMMY_EXPENSES = [
     id: 'e1',
     titre: 'Assurance voiture', 
     montant: 107.5, 
-    date: new Date(2022, 2, 28)
+    date: new Date(2024, 2, 28)
   },
   {
     id: 'e2',
     titre: 'Frais vétérinaire', 
     montant: 355.7, 
-    date: new Date(2021, 9, 15)
+    date: new Date(2025, 9, 15)
   },
   {
     id: 'e3',
     titre: 'Chauffage', 
     montant: 87.9, 
-    date: new Date(2020, 11, 5) 
+    date: new Date(2024, 11, 5) 
   },
   {
     id: 'e4',
     titre: 'Nourriture', 
     montant: 200.46, 
-    date: new Date(2020, 6, 16)
+    date: new Date(2023, 6, 16)
   },
 ];
 

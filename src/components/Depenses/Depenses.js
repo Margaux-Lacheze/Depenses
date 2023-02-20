@@ -8,7 +8,7 @@ const Depenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2024");
 
   const filterChangeHandler = (selectedYear) => {
-    setFilteredYear = selectedYear;
+    setFilteredYear(selectedYear);
   };
   return (
     <div>

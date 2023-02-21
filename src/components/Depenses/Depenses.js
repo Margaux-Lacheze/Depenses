@@ -36,9 +36,7 @@ const Depenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {depensesFiltrees.length === 0 && <p>Pas de dépense trouvée.</p>}
-        {depensesFiltrees.length > 0  &&
-         depensesFiltrees.map((depense) => (
+        {depensesFiltrees.map((depense) => (
           <DepenseItem
             // key est un mot clé permettant à React d'identifier chaque élément grâce à l'id qu'on lui a donné
             key ={depense.id}

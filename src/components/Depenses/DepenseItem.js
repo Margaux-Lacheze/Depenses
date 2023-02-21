@@ -7,14 +7,15 @@ import "./DepenseItem.css";
 const DepenseItem = (props) => {
 
   return (
-    <Card className="depense-item">
-      <DepenseDate date={props.date}/>
-      <div className="depense-item__description">
-        <h2>{props.titre}</h2>
-        <div className="depense-item__prix">{props.montant}€</div>
-      </div>
-
-    </Card>
+    <li>
+      <Card className="depense-item">
+        <DepenseDate date={props.date}/>
+        <div className="depense-item__description">
+          <h2>{props.titre}</h2>
+          <div className="depense-item__prix">{props.montant}€</div>
+        </div>
+      </Card>
+    </li>
   );
 }
 
